@@ -25,16 +25,8 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Install Poetry
-      uses: Gr1N/setup-poetry@v8
-      run: poetry --version
-
-#    - name: Install poetry
-#      run: |
-#        python -m venv venv
-#        source venv/bin/activate
-#        pip install poetry
-#        poetry shell
+    - name: Install and configure Poetry
+      uses: snok/install-poetry@v1
 
     - name: Install dependencies
       run: poetry install
