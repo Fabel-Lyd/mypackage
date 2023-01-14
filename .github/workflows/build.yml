@@ -30,6 +30,7 @@ jobs:
         python -m venv venv
         source venv/bin/activate
         pip install poetry
+        poetry shell
 
     - name: Install dependencies
       run: poetry install
